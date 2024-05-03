@@ -1,11 +1,11 @@
-import { ExtraOptions, RouterModule, Routes } from '@angular/router'
-import { NgModule } from '@angular/core'
-import { PagesComponent } from './pages/pages.component'
-import { HomeComponent } from './pages/home/home.component'
-import { LoginComponent } from './pages/login/login.component'
-import { LogoutComponent } from './pages/logout/logout.component'
-import { TempSaveSampleComponent } from './pages/TempSaveSample/Sample.component'
-import { SampleComponent } from './pages/Sample/Sample.component'
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { PagesComponent } from './pages/pages.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { LogoutComponent } from './pages/logout/logout.component';
+import { TempSaveSampleComponent } from './pages/TempSaveSample/Sample.component';
+import { SampleComponent } from './pages/Sample/Sample.component';
 //_import保留字
 
 export const routes: Routes = [
@@ -21,7 +21,7 @@ export const routes: Routes = [
         path: 'pages',
         loadChildren: () =>
           import('./pages/system-management/system-management.module').then(
-            mod => mod.SystemManagementModule
+            (mod) => mod.SystemManagementModule
           ),
       },
       { path: 'Sample', component: SampleComponent },
@@ -29,11 +29,11 @@ export const routes: Routes = [
     ],
   },
   { path: '**', redirectTo: '/' },
-]
+];
 
 const config: ExtraOptions = {
   useHash: false,
-}
+};
 
 @NgModule({
   imports: [

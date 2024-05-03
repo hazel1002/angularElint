@@ -1,24 +1,24 @@
-﻿import { ComponentFixture, TestBed } from '@angular/core/testing'
+﻿import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TempSaveSampleComponent } from './Sample.component'
+import { TempSaveSampleComponent } from './Sample.component';
 
 describe('SampleComponent', () => {
-  let component: TempSaveSampleComponent
-  let fixture: ComponentFixture<TempSaveSampleComponent>
+  let component: TempSaveSampleComponent;
+  let fixture: ComponentFixture<TempSaveSampleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [TempSaveSampleComponent],
-    }).compileComponents()
-  })
+    }).compileComponents();
+  });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TempSaveSampleComponent)
-    component = fixture.componentInstance
-    fixture.detectChanges()
-  })
+    fixture = TestBed.createComponent(TempSaveSampleComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
   it('should create', () => {
-    expect(component).toBeTruthy()
-  })
-})
+    expect(component).toBeTruthy();
+  });
+});

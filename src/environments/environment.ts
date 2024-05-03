@@ -13,4 +13,4 @@ export const environment = {
   // APIPath: 'http://192.168.0.245:9453/WebAPI/api',
   APIPath: 'http://localhost:9453/api',
   ownerBuId: 'BU00000',
-}
+};

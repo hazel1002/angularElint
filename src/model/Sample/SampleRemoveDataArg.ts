@@ -1,4 +1,4 @@
-﻿import { Page } from '../page'
+﻿import { Page } from '../page';
 export class SampleRemoveDataArg extends Page {
-  cId?: number
+  cId?: number;
 }

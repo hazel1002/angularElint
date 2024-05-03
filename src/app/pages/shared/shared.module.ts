@@ -1,7 +1,7 @@
-import { NbEvaIconsModule } from '@nebular/eva-icons'
-import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
-import { FormsModule } from '@angular/forms'
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import {
   NbButtonModule,
   NbCardModule,
@@ -18,13 +18,13 @@ import {
   NbDatepickerModule,
   NbTagModule,
   NbAutocompleteModule,
-} from '@nebular/theme'
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
-import { PaginationComponent } from './pagination/pagination.component'
-import { ThemeModule } from '../../@theme/theme.module'
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component'
-import { DefaultTagAutoCompleteComponent } from './default-tag-auto-complete/default-tag-auto-complete.component'
-import { TagInputDirectiveComponent } from './tag-input-directive/tag-input-directive.component'
+} from '@nebular/theme';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PaginationComponent } from './pagination/pagination.component';
+import { ThemeModule } from '../../@theme/theme.module';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { DefaultTagAutoCompleteComponent } from './default-tag-auto-complete/default-tag-auto-complete.component';
+import { TagInputDirectiveComponent } from './tag-input-directive/tag-input-directive.component';
 
 @NgModule({
   imports: [

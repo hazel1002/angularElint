@@ -1,3 +1,3 @@
 export class BaseRequest {
-  TypeID?: number
+  TypeID?: number;
 }

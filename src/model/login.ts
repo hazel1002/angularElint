@@ -1,5 +1,5 @@
 export class Login {
-  Account = ''
-  Password = ''
-  Token = ''
+  Account = '';
+  Password = '';
+  Token = '';
 }

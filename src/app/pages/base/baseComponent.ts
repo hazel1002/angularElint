@@ -1,24 +1,24 @@
-import { formatDate } from '@angular/common'
-import { Injectable, OnInit } from '@angular/core'
-import { FormBuilder, FormGroup } from '@angular/forms'
-import * as moment from 'moment'
-import { Menu } from '../../../model/menu'
-import { AllowHelper } from '../../helper/allowHelper'
-import { SharedObservable } from '../shared/shared.observable'
+import { formatDate } from '@angular/common';
+import { Injectable, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import * as moment from 'moment';
+import { Menu } from '../../../model/menu';
+import { AllowHelper } from '../../helper/allowHelper';
+import { SharedObservable } from '../shared/shared.observable';
 
 @Injectable()
 export class BaseComponent implements OnInit {
-  pageIndex = 1
-  pageSize = 10
-  totalRecords = 0
-  pageFirst = 0
+  pageIndex = 1;
+  pageSize = 10;
+  totalRecords = 0;
+  pageFirst = 0;
 
-  isRead = this.allow.isRead()
-  isCreate = this.allow.isCreate()
-  isUpdate = this.allow.isUpdate()
-  isDelete = this.allow.isDelete()
-  isExcelImport = this.allow.isExcelImport()
-  isExcelExport = this.allow.isExcelExport()
+  isRead = this.allow.isRead();
+  isCreate = this.allow.isCreate();
+  isUpdate = this.allow.isUpdate();
+  isDelete = this.allow.isDelete();
+  isExcelImport = this.allow.isExcelImport();
+  isExcelExport = this.allow.isExcelExport();
 
   constructor(protected allow: AllowHelper) {}
 
@@ -27,24 +27,24 @@ export class BaseComponent implements OnInit {
   getSubMenu(menu: Menu, routerUrl: string) {
     return menu
       .Menu!.map(function (p) {
-        return p.Child!
+        return p.Child!;
       })
       .reduce(function (a, b) {
-        return a.concat(b)
+        return a.concat(b);
       })
-      .find(x => routerUrl.indexOf(x.CPageUrl!) !== -1)
+      .find((x) => routerUrl.indexOf(x.CPageUrl!) !== -1);
   }
 
   isNullOrEmpty(value: string | null | undefined) {
     if (value === undefined) {
-      return true
+      return true;
     }
     if (value == null) {
-      return true
+      return true;
     }
     if (value === '') {
-      return true
+      return true;
     }
-    return false
+    return false;
   }
 }

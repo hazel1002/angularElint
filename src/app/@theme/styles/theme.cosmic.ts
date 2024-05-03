@@ -1,6 +1,6 @@
-import { NbJSThemeOptions, COSMIC_THEME as baseTheme } from '@nebular/theme'
+import { NbJSThemeOptions, COSMIC_THEME as baseTheme } from '@nebular/theme';
 
-const baseThemeVariables = baseTheme.variables!
+const baseThemeVariables = baseTheme.variables!;
 
 export const COSMIC_THEME = {
   name: 'cosmic',
@@ -307,4 +307,4 @@ export const COSMIC_THEME = {
       tooltipExtraCss: 'border-radius: 10px; padding: 4px 16px;',
     },
   },
-} as NbJSThemeOptions
+} as NbJSThemeOptions;

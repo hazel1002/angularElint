@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform } from '@angular/core'
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'ngxRound',
@@ -6,6 +6,6 @@ import { Pipe, PipeTransform } from '@angular/core'
 })
 export class RoundPipe implements PipeTransform {
   transform(input: number): number {
-    return Math.round(input)
+    return Math.round(input);
   }
 }

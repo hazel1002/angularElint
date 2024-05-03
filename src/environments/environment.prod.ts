@@ -7,4 +7,4 @@ export const environment = {
   production: true,
   APIPath: '/WebAPI/api',
   ownerBuId: 'BU00000',
-}
+};

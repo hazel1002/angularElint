@@ -1,3 +1,3 @@
 export class Report {
-  CReportURL?: string
+  CReportURL?: string;
 }

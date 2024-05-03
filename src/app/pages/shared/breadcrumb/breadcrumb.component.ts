@@ -1,9 +1,9 @@
-import { AllowHelper } from './../../../helper/allowHelper'
-import { BaseComponent } from './../../base/baseComponent'
-import { Component, OnChanges, OnInit } from '@angular/core'
-import { Menu } from '../../../../model/menu'
-import { SharedObservable } from '../shared.observable'
-import { Router } from '@angular/router'
+import { AllowHelper } from './../../../helper/allowHelper';
+import { BaseComponent } from './../../base/baseComponent';
+import { Component, OnChanges, OnInit } from '@angular/core';
+import { Menu } from '../../../../model/menu';
+import { SharedObservable } from '../shared.observable';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'ngx-breadcrumb',
@@ -12,27 +12,27 @@ import { Router } from '@angular/router'
   standalone: true,
 })
 export class BreadcrumbComponent extends BaseComponent implements OnInit {
-  masterMenu?: string
-  subMenu?: string
+  masterMenu?: string;
+  subMenu?: string;
 
   constructor(
     private share: SharedObservable,
     private router: Router,
     protected override allow: AllowHelper
   ) {
-    super(allow)
+    super(allow);
   }
 
   override ngOnInit(): void {
-    this.share.SharedMenu.subscribe(res => {
+    this.share.SharedMenu.subscribe((res) => {
       if (res.Menu !== undefined) {
-        const subMenu = this.getSubMenu(res, this.router.url)
+        const subMenu = this.getSubMenu(res, this.router.url);
         if (subMenu !== undefined) {
-          const masterMenu = res.Menu.find(x => x.CId === subMenu.CParentId)
-          this.masterMenu = masterMenu!.CName
-          this.subMenu = subMenu.CName
+          const masterMenu = res.Menu.find((x) => x.CId === subMenu.CParentId);
+          this.masterMenu = masterMenu!.CName;
+          this.subMenu = subMenu.CName;
         }
       }
-    })
+    });
   }
 }

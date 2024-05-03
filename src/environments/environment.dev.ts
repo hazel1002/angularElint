@@ -12,4 +12,4 @@ export const environment = {
   production: false,
   APIPath: 'http://localhost:9453/api',
   ownerBuId: 'BU00000',
-}
+};

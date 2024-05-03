@@ -1,24 +1,24 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing'
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DefaultTagAutoCompleteComponent } from './default-tag-auto-complete.component'
+import { DefaultTagAutoCompleteComponent } from './default-tag-auto-complete.component';
 
 describe('DefaultTagAutoCompleteComponent', () => {
-  let component: DefaultTagAutoCompleteComponent
-  let fixture: ComponentFixture<DefaultTagAutoCompleteComponent>
+  let component: DefaultTagAutoCompleteComponent;
+  let fixture: ComponentFixture<DefaultTagAutoCompleteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [DefaultTagAutoCompleteComponent],
-    }).compileComponents()
-  })
+    }).compileComponents();
+  });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DefaultTagAutoCompleteComponent)
-    component = fixture.componentInstance
-    fixture.detectChanges()
-  })
+    fixture = TestBed.createComponent(DefaultTagAutoCompleteComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
   it('should create', () => {
-    expect(component).toBeTruthy()
-  })
-})
+    expect(component).toBeTruthy();
+  });
+});

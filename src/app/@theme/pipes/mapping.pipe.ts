@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform } from '@angular/core'
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'getStatusName',
@@ -7,11 +7,11 @@ import { Pipe, PipeTransform } from '@angular/core'
 export class StatusPipe implements PipeTransform {
   transform(value?: number): any {
     if (value === 0) {
-      return '停用'
+      return '停用';
     } else if (value === 1) {
-      return '啟用'
+      return '啟用';
     } else if (value === 9) {
-      return '刪除'
+      return '刪除';
     }
   }
 }
@@ -23,9 +23,9 @@ export class StatusPipe implements PipeTransform {
 export class DefaultKeyPipe implements PipeTransform {
   transform(value: boolean): any {
     if (value) {
-      return '是'
+      return '是';
     } else {
-      return '否'
+      return '否';
     }
   }
 }
@@ -37,13 +37,13 @@ export class DefaultKeyPipe implements PipeTransform {
 export class TaskStatusPipe implements PipeTransform {
   transform(value: number): any {
     if (value === 0) {
-      return '處理完成'
+      return '處理完成';
     } else if (value === 1) {
-      return '等待中'
+      return '等待中';
     } else if (value === 2) {
-      return '處理中'
+      return '處理中';
     } else if (value === 3) {
-      return '資料異常'
+      return '資料異常';
     }
   }
 }
@@ -55,9 +55,9 @@ export class TaskStatusPipe implements PipeTransform {
 export class TaskLogStatusPipe implements PipeTransform {
   transform(value: number): any {
     if (value === 0) {
-      return '未處理'
+      return '未處理';
     } else if (value === 1) {
-      return '已處理'
+      return '已處理';
     }
   }
 }
