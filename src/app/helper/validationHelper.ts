@@ -15,7 +15,7 @@ export class ValidationHelper {
     if (value == null || value === undefined) {
       this.addErrorMessage(name + ' 必填')
     }
-    if (typeof String) {
+    if (typeof String === 'undefined') {
       if (value === '') {
         this.addErrorMessage(name + ' 必填')
       }

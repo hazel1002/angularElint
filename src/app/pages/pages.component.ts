@@ -57,8 +57,7 @@ export class PagesComponent extends BaseComponent implements OnInit {
     }
 
     this.userService.getMenu().subscribe(res => {
-      let _menu: NbMenuItem[]
-      _menu = []
+      const _menu: NbMenuItem[] = []
 
       res
         .Entries!.Menu!.filter(x => x.CIsMenu === true)
