@@ -1,0 +1,5 @@
+//第一次需先安裝SDK
+dotnet tool install --global dotnet-ef
+
+dotnet ef dbcontext scaffold "Server=localhost\SQLEXPRESS;Database=dbTemplate;Trusted_Connection=False;user id=sa;password=123;" Microsoft.EntityFrameworkCore.SqlServer --output-dir EF/dbTemplate -f -v
+
